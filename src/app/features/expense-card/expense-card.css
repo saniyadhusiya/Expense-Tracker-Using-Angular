@@ -1,0 +1,66 @@
+.expense-card {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #b2e2ea, #b8f0dbae);
+  border: none;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.expense-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
+}
+
+
+.expense-card h4 {
+  color: #312e81;
+  font-weight: 700;
+}
+
+.expense-details p {
+  color: #334155;
+  font-size: 15px;
+}
+
+
+.amount-text {
+  color: #059669;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.notes-box {
+  background: linear-gradient(135deg, #ede9fe, #fdf2f8);
+  border-left: 4px solid #7c3aed;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.notes-box strong {
+  color: #6d28d9;
+}
+
+.btn-outline-primary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  border-radius: 10px;
+}
+
+.btn-outline-primary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-outline-danger {
+  border: 2px solid #e11d48;
+  color: #e11d48;
+  border-radius: 10px;
+}
+
+.btn-outline-danger:hover {
+  background: #e11d48;
+  color: white;
+}

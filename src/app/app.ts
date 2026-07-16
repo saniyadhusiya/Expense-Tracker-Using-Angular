@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { ExpenseManage } from './features/expense-manage/expense-manage';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ExpenseManage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

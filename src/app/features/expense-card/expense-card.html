@@ -1,0 +1,41 @@
+<mat-card class="expense-card shadow-sm border-0">
+
+  <mat-card-content class="p-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h4 class="fw-bold text-dark m-0">{{ expense.title }}</h4>
+
+      <span class="badge"
+        [class.bg-success]="expense.status === 'Paid'"
+        [class.bg-warning]="expense.status === 'Pending'">
+        {{ expense.status }}
+      </span>
+    </div>
+
+    <div class="expense-details">
+
+      <p><strong>₹ Amount:</strong> {{ expense.amount }}</p>
+      <p><strong>Category:</strong> {{ expense.category }}</p>
+      <p><strong>Date:</strong> {{ expense.date }}</p>
+      <p><strong>Payment:</strong> {{ expense.paymentMethod }}</p>
+
+      <div class="notes-box mt-3">
+        <strong>Notes</strong>
+        <p>{{ expense.notes }}</p>
+      </div>
+
+    </div>
+
+    <div class="d-flex gap-2 mt-4">
+      <button class="btn btn-outline-primary w-50" (click)="editExpenseData()">
+        Edit
+      </button>
+
+      <button class="btn btn-outline-danger w-50" (click)="removeExpense()">
+        Delete
+      </button>
+    </div>
+
+  </mat-card-content>
+
+</mat-card>

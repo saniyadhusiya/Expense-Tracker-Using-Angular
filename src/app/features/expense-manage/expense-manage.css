@@ -1,0 +1,44 @@
+.expense-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #dcfce7, #dbeafe, #cffafe);
+}
+
+
+.header-section {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.header-section h1 {
+  color: #1e293b;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header-section p {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+
+.add-btn {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
+.expense-list-section {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}

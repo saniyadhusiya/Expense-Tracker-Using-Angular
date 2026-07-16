@@ -1,0 +1,22 @@
+<div class="expense-page">
+
+  <!-- Fixed Header -->
+  <div class="header-section">
+    <h1>Expense Tracker</h1>
+    <p>Track your daily expenses easily</p>
+
+    <button class="btn add-btn" (click)="openExpenseForm()">
+      + Add Expense
+    </button>
+  </div>
+
+  <!-- Scrollable Cards Section -->
+  <div class="expense-list-section">
+    <app-expense-list
+      [expenses]="expenses()"
+      (editExpense)="editExpense($event)"
+      (deleteExpense)="removeExpense($event)">
+    </app-expense-list>
+  </div>
+
+</div>

@@ -1,0 +1,88 @@
+<div class="expense-form-container">
+  <mat-card class="expense-form-card">
+
+    <h2>Expense Form</h2>
+
+    <form [formGroup]="expenseForm" (ngSubmit)="submit()">
+
+      <div class="form-grid">
+
+       
+        <mat-form-field appearance="outline">
+          <mat-label>Expense Title</mat-label>
+          <input matInput formControlName="title" placeholder="Enter title">
+
+          @if(expenseForm.get('title')?.invalid && expenseForm.get('title')?.touched){
+            <mat-error>Title is required</mat-error>
+          }
+        </mat-form-field>
+
+       
+        <mat-form-field appearance="outline">
+          <mat-label>Amount</mat-label>
+          <input matInput type="number" formControlName="amount" placeholder="Amount">
+
+          @if(expenseForm.get('amount')?.invalid && expenseForm.get('amount')?.touched){
+            <mat-error>Amount is required</mat-error>
+          }
+        </mat-form-field>
+
+       
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category">
+            @for(category of categories; track category.value){
+              <mat-option [value]="category.value">
+                {{category.value}}
+              </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+       
+        <mat-form-field appearance="outline">
+          <mat-label>Date</mat-label>
+          <input matInput type="date" formControlName="date" placeholder="Date">
+        </mat-form-field>
+
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Payment Method</mat-label>
+          <mat-select formControlName="paymentMethod">
+            @for(method of paymentMethods; track method.value){
+              <mat-option [value]="method.value">
+                {{method.value}}
+              </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+       
+        <mat-form-field appearance="outline">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="status">
+            @for(status of statusList; track status.value){
+              <mat-option [value]="status.value">
+                {{status.value}}
+              </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+      
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Notes</mat-label>
+        <textarea matInput formControlName="notes" placeholder="Notes"></textarea>
+      </mat-form-field>
+
+      
+      <button mat-raised-button color="primary" class="save-btn">
+        {{ editData ? 'Update Expense' : 'Save Expense' }}
+      </button>
+
+    </form>
+
+  </mat-card>
+</div>

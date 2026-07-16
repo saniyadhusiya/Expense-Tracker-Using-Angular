@@ -1,0 +1,95 @@
+{
+  "expenses": [
+    {
+      "title": "Chicken Rice",
+      "amount": 150,
+      "category": "Food",
+      "date": "2005-01-04",
+      "paymentMethod": "Cash",
+      "status": "Paid",
+      "notes": "Eaten Rice with Friends ",
+      "id": "XkyYwodfDUE"
+    },
+    {
+      "title": "Cloths",
+      "amount": 800,
+      "category": "Shopping",
+      "date": "2007-08-07",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "Buying Dress ",
+      "id": "IGrz340iPD0"
+    },
+    {
+      "title": "Bus Travel",
+      "amount": 700,
+      "category": "Travel",
+      "date": "2025-08-07",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "College to Home",
+      "id": "W6R91Z5uZ6o"
+    },
+    {
+      "title": "Collage Fess",
+      "amount": 100000,
+      "category": "Education",
+      "date": "2025-06-10",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "Paid College Tution Fees",
+      "id": "2GT6Idy5iHQ"
+    },
+    {
+      "title": "Outing",
+      "amount": 1000,
+      "category": "Entertainment",
+      "date": "2026-02-06",
+      "paymentMethod": "Cash",
+      "status": "Paid",
+      "notes": "Spend for Enjoying with Friends ",
+      "id": "fD2UGlh1D-Q"
+    },
+    {
+      "title": "Hospital",
+      "amount": 1500,
+      "category": "Health",
+      "date": "2024-06-30",
+      "paymentMethod": "Cash",
+      "status": "Pending",
+      "notes": "For Skin Check Up",
+      "id": "7B2q8MtWue4"
+    },
+    {
+      "title": "Gold",
+      "amount": 100000,
+      "category": "Bills",
+      "date": "2005-08-07",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "Bought Gold Ring",
+      "id": "oZ8niEPoXUk"
+    },
+    {
+      "title": "Dress",
+      "amount": 2900,
+      "category": "Shopping",
+      "date": "2026-06-08",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "Buy dress For Birthday",
+      "id": "Q88XnDDFTk0"
+    },
+    {
+      "title": "Soaps",
+      "amount": 300,
+      "category": "Shopping",
+      "date": "2026-07-05",
+      "paymentMethod": "UPI",
+      "status": "Paid",
+      "notes": "Buy Soap for dress Wash",
+      "id": "eaa5RNsEbfw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
